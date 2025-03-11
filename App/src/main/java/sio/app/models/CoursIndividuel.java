@@ -18,4 +18,9 @@ public class CoursIndividuel extends Cours implements ICalcul{
         }
         return super.getPrix() + complement;
     }
+
+    @Override
+    public String getInfo() {
+        return super.getInfo() + " Instrument : " + instrument.getNomInstrument();
+    }
 }

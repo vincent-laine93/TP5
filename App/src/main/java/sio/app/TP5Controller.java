@@ -15,6 +15,8 @@ import sio.app.models.Instrument;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.ResourceBundle;
 
 public class TP5Controller implements Initializable {
@@ -53,8 +55,12 @@ public class TP5Controller implements Initializable {
         cours.add(cc2);
 
         //préparer table view
-        tcPrix.setCellValueFactory(new PropertyValueFactory<>("idCours"));
-        tcInfos.setCellValueFactory(new PropertyValueFactory<>("prixCours"));
+        tcInfos.setCellValueFactory(new PropertyValueFactory<>("info"));
+        tcPrix.setCellValueFactory(new PropertyValueFactory<>("prix"));
+
+        //permet de trier selon la methode compareTo
+        Collections.sort(cours);
+
         tvCours.setItems(FXCollections.observableList(cours));
     }
 }

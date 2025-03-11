@@ -1,6 +1,6 @@
 package sio.app.models;
 
-public class Cours implements ICalcul{
+public class Cours implements ICalcul,Comparable<Cours> {
     private int idCours;
     private double prixCours;
 
@@ -14,8 +14,14 @@ public class Cours implements ICalcul{
         return 5;
     }
 
+
+
     public String getInfo(){
         return "Numéro : " + idCours;
     }
 
+    @Override
+    public int compareTo(Cours o) {
+        return Double.compare(this.getPrix(), o.getPrix());
+    }
 }

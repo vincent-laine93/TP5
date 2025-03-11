@@ -32,6 +32,6 @@ public class CoursCollectif extends Cours implements ICalcul{
 
     @Override
     public String getInfo() {
-        return super.getInfo() + "Nom : " + nomCours + " AgeMini : " + ageMini + " NbPlace : " + nbPlaceMaxi;
+        return super.getInfo() + " Nom : " + nomCours + " AgeMini : " + ageMini + " NbPlace : " + nbPlaceMaxi;
     }
 }
