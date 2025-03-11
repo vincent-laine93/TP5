@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sio.app.TP5Controller">
+   <children>
+      <TableView fx:id="tvCours" layoutX="51.0" layoutY="48.0" prefHeight="300.0" prefWidth="500.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0">
+        <columns>
+          <TableColumn fx:id="tcInfos" prefWidth="375.0" text="Infos" />
+          <TableColumn fx:id="tcPrix" prefWidth="125.0" text="Prix" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
